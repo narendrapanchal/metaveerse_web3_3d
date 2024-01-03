@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.App {
+}
+.fight{
+  display: flex;
+  align-items: last baseline;
+  height: 600px;
+  justify-content: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+
+.avatar.fighting1{
+animation: shake1 0.5s ease-in-out infinite;
+}
+.avatar.fighting2{
+  animation: shake2 0.5s ease-in-out infinite;
+
+}
+@keyframes shake1{
+  0%,100%{
+    transform: translate(0px,0px);
+  }
+  15%,85%{
+    transform: translate(-60px,10px);
+  }
+  90%{
+    transform: translate(-60px,100px);
+  }
+  30%{
+    transform: translate(-160px,-250px);
+  }
+  70%{
+    transform: translate(0px,0px);
+
+  }
+
+  50%{
+    transform: translate(60px,10px);
+  }
+}
+@keyframes shake2{
+  0%,100%{
+    transform: translate(0px,0px);
+  }
+  15%,85%{
+    transform: translate(60px,10px);
+  }
+  70%{
+    transform: translate(260px,-250px);
+  }
+  80%{
+    transform: translate(160px, 0px);
+  }
+  90%{
+    transform: translate(60px,100px);
+    
+  }
+  50%{
+    transform: translate(-60px,10px);
+  }
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
